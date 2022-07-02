@@ -27,6 +27,11 @@ module.exports = withPlugins([[indexSearch], [feed], [sitemap], [socialImages]],
 
     OG_IMAGE_DIRECTORY: '/images/og',
   },
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
 });
 
 /**
